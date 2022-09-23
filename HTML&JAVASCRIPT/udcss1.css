@@ -1,0 +1,47 @@
+h3 {
+		color: black;
+		font-size: 25px;
+		text-align: center;
+		background: grey;
+
+	}
+img
+{
+	border-radius: 30px;
+}
+	#quali {
+  
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#quali td, #quali th {
+  border: 1px solid lightgrey;
+  padding: 8px;
+}
+
+#quali tr:nth-child(even){background-color: lightblue;}
+
+#quali tr:hover {background-color: orange;}
+
+#quali th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: grey;
+  color: white;
+}
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+p.serif {
+  font-family: "Times New Roman", Times, serif;
+}
+

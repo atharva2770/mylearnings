@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+	<h2><p>length:</p></h2>
+	<p id="demo1"></p>
+
+	<h2><p>FirstIndex:</p></h2>
+	<p id="demo2"></p>
+
+	<h2><p>LastIndex:</p></h2>
+	<p id="demo3"></p>
+
+	<h2><p>Search:</p></h2>
+	<p id="demo4"></p>
+	
+	<h2><p>slice():</p></h2>
+	<p id="demo5"></p>
+
+	<h2><p>rslice():</p></h2></h2>
+	<p id="demo6"></p>
+
+	<h2><p>oslice():</p></h2>
+	<p id="demo7"></p>
+
+	<h2><p>Substring:</p></h2>
+	<p id="demo8"></p>
+
+	<h2><p>String:</p></h2>
+	<p id="demo9"></p>
+
+	<h2><p>Replace:</p></h2>
+	<p id="demo10">Atharva is Good boy</p>
+
+	<h2><p>Upper Case:</p></h2>
+	<p id="demo11">Atharva is Good boy</p>
+
+<script type="text/javascript">
+	var txt = "ATHARVA";
+	document.getElementById("demo1").innerHTML = txt.length;
+
+	var str = "Please ATHARVA search where 'search' occurs!";
+	var pos = str.indexOf("search");
+	document.getElementById("demo2").innerHTML = pos;
+
+	var str = "Please ATHARVA search where 'search' occurs!";
+	var pos = str.lastIndexOf("search");
+	document.getElementById("demo3").innerHTML = pos;
+
+	var str = "Please ATHARVA search where 'search' occurs!";
+	var pos = str.search("search");
+	document.getElementById("demo4").innerHTML = pos;
+
+	var str = "Apple, Banana, Kiwi ,ATHARVA";
+	var res = str.slice(7,20);
+	document.getElementById("demo5").innerHTML = res; 
+
+	var str = "Apple, Banana, Kiwi ,ATHARVA";
+	var res = str.slice(-21,-7);
+	document.getElementById("demo6").innerHTML = res; 
+
+	var str = "Apple, Banana, Kiwi ,ATHARVA";
+	var res = str.slice(7);
+	document.getElementById("demo7").innerHTML = res;
+
+	var str = "Apple, Banana, Kiwi";
+	var res = str.substring(7,13);
+	document.getElementById("demo8").innerHTML = res;
+
+  	var a1 = "It's a nice day";
+	var a2 = "My name is 'Atharva'";
+	var a3 = 'My name is "Atharva"'; 
+
+	document.getElementById("demo9").innerHTML =
+	a1 + "<br>" + a2 + "<br>" + a3; 
+
+	var str = document.getElementById("demo10").innerHTML; 
+  	var txt = str.replace("Good","Bad");
+  	document.getElementById("demo10").innerHTML = txt;
+
+  	var text = document.getElementById("demo11").innerHTML;
+  	document.getElementById("demo11").innerHTML = text.toUpperCase();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bubble Sort</title>
+	<style type="text/css">
+		div{
+		
+			border:10px solid grey;
+			padding: 10px; 
+			background-color: blue;
+			margin-left: 30%;
+			margin-right: 30%;
+
+		}
+		p{
+			background-color: lightblue;
+			padding-left: 120px;
+		}
+	</style>
+</head>
+<body>
+<script type="text/javascript"> 
+	var i,j,temp;
+	var a = [50,40,30,20,10];
+	document.write("<div><p> Unsorted list :- "+a+"</p>");
+	for(i=0;i<4;i++)
+		for(j=0;j<5;j++)
+		{
+			if(a[j]>a[j+1])
+			{
+				temp=a[j];
+				a[j]=a[j+1];
+				a[j+1]=temp;
+			}
+
+		}
+	document.write("<p> After Sort list :-   "+a+"</div></p>");
+</script>
+</body>
+</html>
